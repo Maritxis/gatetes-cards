@@ -11,7 +11,7 @@ const initialState = {
 const reducer = (state = initialState, action) => {
  switch(action.type) {
   case(ACTIONS.DISPLAY_DATA):
-   return {...state, data, intialPage: false };
+   return {...state, data, initialPage: false };
   case(ACTIONS.ADD_TO_FAVOURITES):
    return {...state, favourites: state.favourites.push(action.payload)};
   case(ACTIONS.RMV_FROM_FAV):
